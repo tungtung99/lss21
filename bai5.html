@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=['Polaris', 'Aldebaran','Deneb', 'Vega', 'Altair', 'Dubhe' ,'Regulus']
+        let arr1=['Ursa Minor', 'Tarurus','Cygnus', 'Lyra', 'Aquila', 'Major' ,'Leo']
+        function timstar(chuoi){
+            let ten = prompt("Nhập tên: ")
+            let check=0;
+            for(let i=0;i<arr.length;i++){
+                if(ten==arr[i]){
+                    check=1;
+                    return alert(arr1[i])
+                }
+            }
+            if(check==0){
+                return alert('Không tìm thấy ngôi sao')
+            }
+        }
+    </script>
+    <script>
+        timstar()
+    </script>
+</body>
+</html>
